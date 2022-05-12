@@ -1,11 +1,5 @@
 # bivouac: wild campsite locator
-This is a tool to rank the viability of wild camping locations.
-
---- 
-Version 1.0:
-https://crispianm.github.io/bivouac.html
-
----
+This is a tool to rank the viability of wild camping locations, and also calculate off-path routes to them.
 
 ## Usage
 Run `docker build --tag bivouac .`, and open http://127.0.0.1:5000/
