@@ -8,7 +8,7 @@ https://crispianm.github.io/bivouac.html
 ---
 
 ## Usage
-Run `map.py`, and open http://127.0.0.1:5000/
+Run `docker build --tag bivouac .`, and open http://127.0.0.1:5000/
 
 ## Requirements
 numpy

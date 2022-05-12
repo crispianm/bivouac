@@ -90,7 +90,7 @@ def wind_shelter(lat, lng, zoom):
     # finding wind direction at coords
     direction = np.pi / 180 * basic_weather_calls.wind_direction(lat, lng)
 
-    print(direction)
+    # print(direction)
 
     # initial values
 

@@ -327,7 +327,7 @@
             font-family: "Open Sans", sans-serif;
         }
 
-        /* #mouse_info {
+        #mouse_info {
             display: table;
             position: absolute;
             left: 37.5%;
@@ -343,7 +343,7 @@
             text-align: center;
             color: #222;
             background: #fff;
-        } */
+        }
 
         #menu a {
             font-size: 13px;
@@ -668,6 +668,8 @@
 
             var coordinate = $("mouse_info").html();
 
+            // var features = map.queryRenderedFeatures(bbox);
+
             $.ajax({
                 type: "POST",
                 async: false,
@@ -859,9 +861,9 @@
                 //     layers: ['camp_landcover', 'camp_landuse']
                 // });
 
-                const features = map.queryRenderedFeatures(bbox);
+                var features = map.queryRenderedFeatures(bbox);
 
-                const displayProperties = [
+                var displayProperties = [
                     // 'type',
                     "properties",
                     "id",
@@ -870,8 +872,8 @@
                     "geometry",
                 ];
 
-                const displayFeatures = features.map((feat) => {
-                    const displayFeat = {};
+                var displayFeatures = features.map((feat) => {
+                    var displayFeat = {};
                     displayProperties.forEach((prop) => {
                         displayFeat[prop] = feat[prop];
                     });
