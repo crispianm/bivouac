@@ -150,8 +150,6 @@ class Optimiser:
                 print("\nNo path found")
                 break
 
-        print("\n\nMINIMUM PATH: \n\n", min_path)
-
         return self.convertToJson(min_path)
 
     def getFeatures(self):
@@ -230,7 +228,7 @@ def end_destination():
 
         data = {"status": "success", "minpath": minpath}
 
-        print("end_dest function minpath obtained!\n")
+        print("Minpath obtained!\n")
 
     return data, 200
 
